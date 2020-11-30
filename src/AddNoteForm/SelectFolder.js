@@ -1,9 +1,9 @@
 import React from 'react';
-import StoreContext from '../ApiContext';
+import ApiContext from '../ApiContext';
 import PropTypes from 'prop-types';
 
 export default class SelectFolder extends React.Component {
-    static contextType = StoreContext;
+    static contextType = ApiContext;
 
     static propTypes = {
         handleChange: PropTypes.func.isRequired

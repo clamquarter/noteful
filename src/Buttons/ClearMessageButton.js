@@ -1,17 +1,17 @@
 import React from 'react';
-import StoreContext from '../ApiContext';
+import ApiContext from '../ApiContext';
 
-export default class ClearMessage extends React.Component {
+export default class ClearMessageButton extends React.Component {
     render() {
         return (
-            <StoreContext.Consumer>
+            <ApiContext.Consumer>
                 {({ clearMessage }) => {
                     return (
                         <button className='clear-message'
                             onClick={clearMessage}> Clear </button>
                     )
                 }}
-            </StoreContext.Consumer>
+            </ApiContext.Consumer>
         )
     }
 }

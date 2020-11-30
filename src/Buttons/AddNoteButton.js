@@ -1,8 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
-
-export default class AddNote extends React.Component {
+ class AddNoteButton extends React.Component {
     static propTypes = {
         history: PropTypes.object.isRequired
     };
@@ -17,3 +16,5 @@ export default class AddNote extends React.Component {
     }
 }
 
+
+export default withRouter(AddNoteButton)

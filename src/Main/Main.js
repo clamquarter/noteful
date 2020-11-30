@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
-import AddNote from '../Buttons/AddNoteButton';
-import DeleteNote from '../Buttons/DeleteNoteButton';
+import AddNoteButton from '../Buttons/AddNoteButton';
+import DeleteNoteButton from '../Buttons/DeleteNoteButton';
 import ApiContext from '../ApiContext';
 
 export default class Main extends React.Component {
@@ -18,7 +18,7 @@ export default class Main extends React.Component {
                                 <Link to={`/note/${item.name}`}>
                                     {item.name}
                                 </Link>
-                                <DeleteNote
+                                <DeleteNoteButton
                                     id={item.id} />
                                 <p>Date modified: <br />
                                     {moment(item.modified).calendar()}
@@ -29,7 +29,7 @@ export default class Main extends React.Component {
                     return (
                         <ul>
                             { mainList}
-                            <AddNote />
+                           {/*  <AddNoteButton /> */}
                         </ul>
                     )
                 }}

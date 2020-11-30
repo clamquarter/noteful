@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import CircleButton from '../Buttons/CircleButton/CircleButton'
+import CircleButton from '../Buttons/CircleButton'
 import ApiContext from '../ApiContext'
 import { countNotesForFolder } from '../notes-helpers'
 import './NoteListNav.css'

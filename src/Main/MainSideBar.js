@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import AddFolder from '../Buttons/AddFolderButton';
+import AddFolderButton from '../Buttons/AddFolderButton';
 import ApiContext from '../ApiContext';
-import AddNote from '../Buttons/AddNoteButton';
+import AddNoteButton from '../Buttons/AddNoteButton';
 
 export default class MainSideBar extends React.Component {
 
@@ -27,8 +27,8 @@ export default class MainSideBar extends React.Component {
                     return (
                         <>
                             {folderItems}
-                            <AddFolder />
-                            <AddNote />
+                            <AddFolderButton />
+                            <AddNoteButton />
                         </>
                     )
                 }}

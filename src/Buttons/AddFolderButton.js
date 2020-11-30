@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default class AddFolder extends React.Component {
+export default class AddFolderButton extends React.Component {
 
     render() {
         return (

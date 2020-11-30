@@ -1,9 +1,9 @@
 import React from 'react';
-import StoreContext from '../ApiContext';
+import ApiContext from '../ApiContext';
 import PropTypes from 'prop-types';
 
-export default class DeleteNote extends React.Component {
-    static contextType = StoreContext;
+export default class DeleteNoteButton extends React.Component {
+    static contextType = ApiContext;
 
     static defaultProps = {
         id: 'wuia4rgis'
@@ -34,7 +34,7 @@ export default class DeleteNote extends React.Component {
         const { id } = this.props;
         
         return (
-            <StoreContext.Consumer>
+            <ApiContext.Consumer>
                 {({ handleDelete }) => {
                     return (
                         <button className='delete-note'
@@ -48,7 +48,7 @@ export default class DeleteNote extends React.Component {
                         >DELETE</button>
                     )
                 }}
-            </StoreContext.Consumer>
+            </ApiContext.Consumer>
         )
     }
 }

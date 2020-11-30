@@ -1,12 +1,12 @@
 import React from 'react';
-import StoreContext from '../ApiContext';
+import ApiContext from '../ApiContext';
 import ValidationError from '../ValidationError';
 import PropTypes from 'prop-types';
 import config from '../config'
 
 
 export default class AddFolder extends React.Component {
-    static contextType = StoreContext;
+    static contextType = ApiContext;
 
     constructor(props) {
         super(props);
