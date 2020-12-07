@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
-import AddNoteButton from '../Buttons/AddNoteButton';
 import DeleteNoteButton from '../Buttons/DeleteNoteButton';
 import ApiContext from '../ApiContext';
 
@@ -29,7 +28,6 @@ export default class Main extends React.Component {
                     return (
                         <ul>
                             { mainList}
-                           {/*  <AddNoteButton /> */}
                         </ul>
                     )
                 }}

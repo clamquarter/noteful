@@ -5,9 +5,10 @@ export default class AddFolderButton extends React.Component {
 
     render() {
         return (
-            <Link to='/AddFolder'>
+            <button> <Link to='/AddFolder'>
                 <li key='addFolder'>New Folder</li>
             </Link>
+            </button>
         )
     }
 }

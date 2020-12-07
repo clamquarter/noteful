@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
-import AddNote from '../Buttons/AddNoteButton';
 import DeleteNote from '../Buttons/DeleteNoteButton';
 import ApiContext from '../ApiContext';
 import PropTypes from 'prop-types';
@@ -37,7 +36,6 @@ export default class Folder extends React.Component {
                     return (
                         <ul>
                             { mainList}
-                            <AddNote />
                         </ul>
                     )
                 }}

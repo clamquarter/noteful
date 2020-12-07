@@ -1,8 +1,10 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import './Header.css'
 
-export default class Header extends React.Component {
+
+ class Header extends React.Component {
     static propTypes = {
         history: PropTypes.object.isRequired
     };
@@ -17,3 +19,5 @@ export default class Header extends React.Component {
         )
     }
 }
+
+export default withRouter(Header)

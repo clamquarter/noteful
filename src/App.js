@@ -124,14 +124,15 @@ export default class App extends React.Component {
       <BrowserRouter>
         <div className="App">
           <ApiContext.Provider value={contextValues}>
-
-            <Header >
+            <div className="header">
+            <Header>
               <Route path='/' component={Header} />
             </Header>
-
+            </div>
             {loading}{error}{updateMessage}
 
             <main className='group'>
+              <div className="sidebar">
               <ErrorBoundary>
                 <SideBar >
                   <Route exact path='/' component={MainSideBar} />
@@ -141,6 +142,7 @@ export default class App extends React.Component {
                   <Route path='/AddFolder' component={AddFolderSideBar} />
                 </SideBar>
               </ErrorBoundary>
+              </div>
 
               <ErrorBoundary>
                 <Main >

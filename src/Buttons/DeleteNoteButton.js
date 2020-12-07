@@ -1,12 +1,14 @@
 import React from 'react';
 import ApiContext from '../ApiContext';
-import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 
-export default class DeleteNoteButton extends React.Component {
+import PropTypes from 'prop-types';
+ 
+class DeleteNoteButton extends React.Component {
     static contextType = ApiContext;
 
     static defaultProps = {
-        id: 'wuia4rgis'
+        id: '37d2ae'
     };
 
     static propTypes = {
@@ -44,6 +46,7 @@ export default class DeleteNoteButton extends React.Component {
                                     handleDelete(id);
                                     this.deleteNote(id);
                                 }
+                                this.props.history.goBack()
                             }}
                         >DELETE</button>
                     )
@@ -52,3 +55,6 @@ export default class DeleteNoteButton extends React.Component {
         )
     }
 }
+
+
+export default withRouter(DeleteNoteButton)
