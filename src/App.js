@@ -33,7 +33,7 @@ export default class App extends React.Component {
 
   componentDidMount = () => {
     this.setState({ loading: true })
-    fetch(`${config.API_ENDPOINT}/db`)
+    fetch(`${config.API_ENDPOINT}/`)
       .then(resp => {
         if (!resp.ok) {
           throw new Error('Unable to contact server. Please try again later!')
