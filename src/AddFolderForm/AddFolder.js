@@ -33,7 +33,7 @@ export default class AddFolder extends React.Component {
             body: newFolder
         }
 
-        fetch(`${config.API_ENDPOINT}/folders`, options)
+        fetch(`${config.API_ENDPOINT}/api/folders`, options)
             .then(resp => {
                 if (!resp.ok) {
                     throw new Error('Folder not added - please try again later.')

@@ -51,7 +51,7 @@ export default class AddNote extends React.Component {
             body: newNote
         }
 
-        fetch(`${config.API_ENDPOINT}/notes`, options)
+        fetch(`${config.API_ENDPOINT}/api/notes`, options)
             .then(resp => {
                 if (!resp.ok) {
                     throw new Error('Note was not added - please try again later.')
